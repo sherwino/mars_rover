@@ -61,7 +61,7 @@ function move(rover) {
   var updateDir = "Now your Mars Rover is facing "
   var dirList = newdir.split("");
   var idx = 0;
-
+// Need to add an alternatative way to update newdir. Using the buttons. 
 
 
   while (idx <= dirList.length) {
