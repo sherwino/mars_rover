@@ -3,7 +3,7 @@ header {
   font-family: "Arial", Helvetica, sans-serif;
   font-size: 38px;
   color: darkgrey;
-  word-wrap: ;
+  word-wrap: break-word;
   padding: 40px;
   border-radius: 15px;
   margin-top: 2%;
