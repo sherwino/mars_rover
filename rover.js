@@ -1,5 +1,5 @@
 var myRover = {
-  position: [0,0], 
+  position: [0,0],
   direction: 'N'
 };
 
@@ -33,42 +33,40 @@ goForward(myRover);
 function move(rover) {
   var newdir = (prompt("Which way would you like to move? f (forward), b (backward), l (left), r (right) "));
   var updateDir = "Now your Mars Rover is facing "
+  var dirList = newdir.split("");
 
-  switch(newdir) {
+  switch(dirList) {
     case "f":
     rover.direction = "N"
     updateDir += rover.direction;
     console.log(updateDir);
 
     break;
-    
+
     case "b":
     rover.direction = "S"
     updateDir += rover.direction;
     console.log(updateDir);
 
     break;
-    
+
     case "l":
     rover.direction = "W"
     updateDir += rover.direction;
     console.log(updateDir);
 
     break;
-    
+
     case "r":
     rover.direction = "E"
     updateDir += rover.direction;
     console.log(updateDir);
 
     break;
-    
+
     default:
     console.log("You didn't make any moves")
     break;
   };
 console.log("Your rover is currently facing " + myRover.direction + " and is standing on point [" + myRover.position + "]");
 }
-
-
-
