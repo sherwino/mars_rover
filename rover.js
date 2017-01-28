@@ -23,3 +23,8 @@ function goForward(rover) {
 }
 
 goForward(myRover);
+
+// Make sure you use data structures (basic data types, arrays & objects)
+// Make sure you use boolean and conditionals
+// Make sure you use loops to avoid code repetition
+// Make sure you use functions and organize your code
