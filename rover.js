@@ -18,8 +18,34 @@ function goForward(rover) {
       rover.position[1]--
       break;
   };
-
-  console.log("New Rover Position: [" + rover.position[0] + ", " + rover.position[1] + "]")
+  function tenten(rover) {
+    if (rover.position[0] === 10) {
+      console.log("You are on the EDGE!");
+    }
+    else if (rover.position[1] === 10) {
+      console.log("You are on the EDGE!");
+    }
+    else if (rover.position[1] > 10) {
+      rover.position[1] = 0;
+      console.log("You went over the edge");
+    }
+    else if (rover.position[0] > 10) {
+      rover.position[0] = 0;
+      console.log("You went over the edge");
+    }
+    else if (rover.position[0] >= 5 && <= 8) {
+      console.log("You are in a crater bro!!");
+    }
+    else if (rover.position[1] >= 1 && <= 3) {
+      console.log("It will take you two sols to get out");
+    }
+    else {
+      console.log("....You know it took the Mars Rover Curiosity 13 minutes, 48 seconds to receive radio signals")
+      //later I will put a delay to the function
+    } //close else statement
+  } //close tenten function
+  tenten(rover);
+  console.log("New Rover Position: [" + rover.position[0] + ", " + rover.position[1] + "]");
 }
 
 goForward(myRover);
@@ -34,39 +60,44 @@ function move(rover) {
   var newdir = (prompt("Which way would you like to move? f (forward), b (backward), l (left), r (right) "));
   var updateDir = "Now your Mars Rover is facing "
   var dirList = newdir.split("");
+  var idx = 0;
 
-  switch(dirList) {
+
+
+  while (idx <= dirList.length) {
+
+    switch (dirList[idx]) {
     case "f":
-    rover.direction = "N"
-    updateDir += rover.direction;
-    console.log(updateDir);
+    rover.direction = "N";
+    console.log(updateDir + rover.direction);
 
     break;
 
     case "b":
     rover.direction = "S"
-    updateDir += rover.direction;
-    console.log(updateDir);
+    console.log(updateDir + rover.direction);
 
     break;
 
     case "l":
     rover.direction = "W"
-    updateDir += rover.direction;
-    console.log(updateDir);
+    console.log(updateDir + rover.direction);
 
     break;
 
     case "r":
     rover.direction = "E"
-    updateDir += rover.direction;
-    console.log(updateDir);
+    console.log(updateDir + rover.direction);
 
     break;
 
     default:
-    console.log("You didn't make any moves")
+    console.log("...now goForward");
     break;
   };
-console.log("Your rover is currently facing " + myRover.direction + " and is standing on point [" + myRover.position + "]");
+  idx += 1;
+
+  // console.log("Your rover is currently facing " + myRover.direction + " and is standing on point [" + myRover.position + "]");
+  }
+
 }
