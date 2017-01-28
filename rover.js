@@ -33,14 +33,14 @@ function goForward(rover) {
       rover.position[0] = 0;
       console.log("You went over the edge");
     }
-    else if (rover.position[0] >= 5 && <= 8) {
+    else if (rover.position[0] >= 5 && rover.position[0] <= 8) {
       console.log("You are in a crater bro!!");
     }
-    else if (rover.position[1] >= 1 && <= 3) {
+    else if (rover.position[1] >= 1 && rover.position[0] <= 3) {
       console.log("It will take you two sols to get out");
     }
     else {
-      console.log("....You know it took the Mars Rover Curiosity 13 minutes, 48 seconds to receive radio signals")
+      console.log("....")
       //later I will put a delay to the function
     } //close else statement
   } //close tenten function
