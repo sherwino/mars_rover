@@ -1,3 +1,10 @@
+// Need to add stylized buttons and need to fix the functions so that they work with the buttons
+// Need to add other rovers
+// Need to make the obstacles random
+//  And make a function for the obstacles
+// Need to embed the console responses into the HTML file so that user sees response without console. 
+// Need to make buttons function with keyboard keys
+
 var myRover = {
   position: [0,0],
   direction: 'N'
