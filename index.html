@@ -7,6 +7,7 @@
 	<meta name="description" content="" />
 	<title>Mars Rover Kata!</title>
 	<script type="text/javascript" src="rover.js"></script>
+	<!--This script is relatively untouched-->
 	<script src="classie.js"></script>
 	<link rel="stylesheet" href="style.css" />
 	<link rel="stylesheet" href="rover.css"/>
@@ -37,7 +38,8 @@
             <a href="">Ipsum</a>
             <a href="">Dolor</a>
         </nav>
-				<p>Let's make javascript happen.</p>
+				<!--Made some room for this guy in the header-->
+			<p>Let's make javascript happen.</p> 
     </div>
 		
 </header><!-- /header -->
@@ -46,10 +48,11 @@
 <body>
 <article>
 	<h1>Instructions</h1>
-	<details>
-		<summary>
+	<!--Don't do this until we have more content-->
+	<!--<details>
+		<summary>-->
 		Here is a summary of what I am trying ot achieve:
-	</summary>
+	<!--</summary>-->
 		<h3>Step 1</h3>
 			<p>Setup the github repo</p>
 
@@ -90,7 +93,7 @@
 
 			<h3>Step 7 </h3>
 			<p>Give it some style</p>
-	</details>
+	<!--</details>-->
 </article>
 
 <section>
@@ -99,22 +102,26 @@
 <table style="width:100%">
   <tr>
     <th></th>
-    <th>MOVEMENT BUTTONS</th>
-    <th></th>
+		<th>DIRECTIONAL BUTTONS</th>
+		<th></th>
+    <th>FORWARD/BACKWARD BUTTONS</th>
+	
   </tr>
   <tr>
     <td></td>
-    <td>Forward</td>
+    <td>Up</td>
     <td></td>
+		<td><a href="javascript:goForward(kata)">Forward</a></td>
   </tr>
 	<tr>
-		<td><a href="javascript:move(myRover)">Left</a></td>
-		<td><a href="javascript:goForward(myRover)">Move</a></td>
+		<td><a href="javascript:move(kata)">Left</a></td>
+		<td>+</td>
 		<td>Right</td>
+		<td>Backward</td>
 	</tr>
   <tr>
     <td></td>
-    <td>Backward</td>
+    <td>Down</td>
     <td></td>
   </tr>
 </table>

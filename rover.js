@@ -6,7 +6,7 @@
 // Need to make buttons function with keyboard keys
 
 
-var myRover = {
+var kata = {
   position: [0,0],
   direction: 'N'
 };
@@ -56,7 +56,7 @@ function goForward(rover) {
   console.log("New Rover Position: [" + rover.position[0] + ", " + rover.position[1] + "]");
 }
 
-goForward(myRover);
+goForward(kata);
 
 // Make sure you use data structures (basic data types, arrays & objects)
 // Make sure you use boolean and conditionals
@@ -105,7 +105,7 @@ function move(rover) {
   };
   idx += 1;
 
-  // console.log("Your rover is currently facing " + myRover.direction + " and is standing on point [" + myRover.position + "]");
+  // console.log("Your rover is currently facing " + kata.direction + " and is standing on point [" + kata.position + "]");
   }
 
 }
