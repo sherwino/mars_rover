@@ -5,6 +5,7 @@
 // Need to embed the console responses into the HTML file so that user sees response without console. 
 // Need to make buttons function with keyboard keys
 
+
 var myRover = {
   position: [0,0],
   direction: 'N'
@@ -108,3 +109,5 @@ function move(rover) {
   }
 
 }
+
+// Below you have the functions that you need embed the javascript into the HTML File
