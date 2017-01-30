@@ -6,12 +6,16 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1.0" />
 	<meta name="description" content="" />
 	<title>Mars Rover Kata!</title>
-	<script type="text/javascript" src="rover.js"></script>
-	<!--This script is relatively untouched-->
+	<script src="rover.js"></script>
+	<!--I am going to add jQuery so that I could easily grab a keypress-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<!--This script is relatively untouched, I need to look over it-->
 	<script src="classie.js"></script>
 	<link rel="stylesheet" href="style.css" />
 	<link rel="stylesheet" href="rover.css"/>
-	<script>
+	<!--I copied this script to help me with the resizing header-->
+	<!--Look over this to double check you know what it is doing-->
+	<script> 
     function init() {
         window.addEventListener('scroll', function(e){
             var distanceY = window.pageYOffset || document.documentElement.scrollTop,
@@ -28,6 +32,7 @@
     }
     window.onload = init();
 </script>
+
 </head>
 
 <header>
@@ -68,71 +73,89 @@
 		<h3>Step 5 </h3>
 			<p>Make sure you make the javascript so that it could write to the webpage HTML file</p>
 
-			<h3>Step 6 </h3>
+		<h3>Step 6 </h3>
 			<p>Create two options form input, instead of a popup and the button commands</p>
 
-			<h3>Step 7 </h3>
+		<h3>Step 7 </h3>
 			<p>Give it some style</p>
-					<h3>Step 1</h3>
-			<p>Setup the github repo</p>
-
-		<h3>Step 2</h3>
-			<p>Open the files from the repo on the browser console</p>
-
-		<h3>Step 3</h3>
-			<p>Make it more pleasant to look at.</p>
-
-		<h3>Step 4</h3>
-			<p>Start working on the Javascript</p>
-
+		
 		<h3>Step 5 </h3>
 			<p>Make sure you make the javascript so that it could write to the webpage HTML file</p>
 
-			<h3>Step 6 </h3>
+		<h3>Step 6 </h3>
 			<p>Create two options form input, instead of a popup and the button commands</p>
 
-			<h3>Step 7 </h3>
+		<h3>Step 7 </h3>
 			<p>Give it some style</p>
+		
 	<!--</details>-->
 </article>
 
 <section>
-	<p>Below this line I am going to call some scripts, for now will see the results of our code in the console.</p>
+	<h3>To control your rover please enter commands below.</h3>
+	<ul>
+		<li>Type "f" to face forward or North</li>
+		<li>Type "b" to face backward or South</li>
+		<li>Type "l" to face left or West</li>
+		<li>Type "r" to face right or East</li>
+	</ul>
+<form name="userInput" method="post">
+<input type="text" name="roverCom">
+<button type="reset">Reset</button>
+<button type="button" onclick="submitCommand()">Send to Mars!</button>
+</form>
+  <!--<fieldset id ="fieldTest" name="roverCom">
+	  <input type="text" name="commands">-->
+
+    <!--<label for="target">Type your commands here:</label>
+    <input id="command" type="text">-->
+  <!--</fieldset>
+  <button id="other" onclick ="submitCommand()">Send to Mars!</button>-->
+
+
 <hr></hr>
 <table style="width:100%">
-  <tr>
-    <th></th>
+  	<tr>
+    	<th></th>
 		<th>DIRECTIONAL BUTTONS</th>
 		<th></th>
-    <th>FORWARD/BACKWARD BUTTONS</th>
-	
-  </tr>
-  <tr>
-    <td></td>
-    <td>Up</td>
-    <td></td>
-		<td><a href="javascript:goForward(kata)">Forward</a></td>
-  </tr>
+  	</tr>
+  	<tr>
+    	<td></td>
+    	<td>Up</td>
+    	<td></td>
+  	</tr>
 	<tr>
 		<td><a href="javascript:move(kata)">Left</a></td>
 		<td>+</td>
 		<td>Right</td>
-		<td>Backward</td>
 	</tr>
-  <tr>
-    <td></td>
-    <td>Down</td>
-    <td></td>
-  </tr>
+  	<tr>
+    	<td></td>
+    	<td>Down</td>
+    	<td></td>
+  	</tr>
 </table>
+<hr></hr>
 
+<table style="width:100%">
+	<tr>
+    	<th>MOVEMENT BUTTONS</th>
+	</tr>
+	<tr>
+    	<td><a href="javascript:goForward(kata)">Forward</a></td>
+	</tr>
+	<tr>
+		<td><a href="javascript:goForward(kata)">Forward</a></td>
+	</tr>
+</table>
 </section>
 </body>
 <footer>
 <div id="info-bar">
     <div class="container clearfix">
-        <span class="all-tutorials"><a href="http://callmenick.com/">&larr; all tutorials</a></span>
-        <span class="back-to-tutorial"><a href="http://callmenick.com/post/animated-resizing-header-on-scroll">back to the tutorial</a></span>
+        <span class="all-tutorials"><a href="http://www.github.com/sherwino/mars_rover">See project on Github.com</a></span>
+        <span class="back-to-tutorial"><a href="http://codepen.io">See Code on Codepen.io</a></span>
     </div>
 </footer><!-- /footer -->
 </html>

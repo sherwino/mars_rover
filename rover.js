@@ -1,17 +1,37 @@
 // Need to add stylized buttons and need to fix the functions so that they work with the buttons
 // Need to add other rovers
 // Need to make the obstacles random
-//  And make a function for the obstacles
+// And make a function for the obstacles
 // Need to embed the console responses into the HTML file so that user sees response without console. 
 // Need to make buttons function with keyboard keys
-
-
 var kata = {
   position: [0,0],
   direction: 'N'
 };
 
+var testCom = "";
+
+function submitCommand() {
+  testCom = document.forms["userInput"]["roverCom"].value;
+  testCom = String(testCom);
+  if (testCom === "forward") {
+    goForward(kata);
+  }
+  else if (testCom === "backward") {
+    goBackward(kata);
+  }
+  else {
+    move(kata, testCom);
+}
+}
+
+
+
+
+
+
 function goForward(rover) {
+
   switch(rover.direction) {
     case 'N':
       rover.position[0]++
@@ -57,24 +77,22 @@ function goForward(rover) {
 }
 
 goForward(kata);
-
 // Make sure you use data structures (basic data types, arrays & objects)
 // Make sure you use boolean and conditionals
 // Make sure you use loops to avoid code repetition
 // Make sure you use functions and organize your code
 
 
-function move(rover) {
-  var newdir = (prompt("Which way would you like to move? f (forward), b (backward), l (left), r (right) "));
-  var updateDir = "Now your Mars Rover is facing "
-  var dirList = newdir.split("");
+function move(rover, dir) {
+  var updateDir = "Now your Mars Rover is facing ";
+  var newdir = dir.split("");
   var idx = 0;
 // Need to add an alternatative way to update newdir. Using the buttons. 
 
 
-  while (idx <= dirList.length) {
+  while (idx <= newdir.length) {
 
-    switch (dirList[idx]) {
+    switch (newdir[idx]) {
     case "f":
     rover.direction = "N";
     console.log(updateDir + rover.direction);

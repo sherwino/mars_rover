@@ -43,8 +43,6 @@ a:hover {
   margin: 0% 2%;
   padding: 0px 10px; }
 
-section {
-  padding: 60px 0; }
   section h1 {
     font-weight: 700;
     margin-bottom: 10px; }
@@ -176,10 +174,6 @@ header.smaller nav a {
     line-height: 75px;
 }
 
-p#spacer {
-  margin-top: 15%;
-}
-
 /* =Footer
 -------------------------------------------------------------- */
 /* =Extras
@@ -241,3 +235,6 @@ p#spacer {
     text-align: center; }
   #info-bar span.all-tutorials {
     border-bottom: solid 1px #0793e2; } }
+  
+
+  

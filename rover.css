@@ -1,10 +1,10 @@
 
 article {
   font-size: 18px;
-  color: grey;
-  margin: 0px 0px 0px 80px;
-  word-wrap: break-word;
-  padding: 40px;
+  color: darkgrey;
+  margin: 0px 0px 0px 15px;
+  /*word-wrap: break-word;*/
+  padding: 30px;
   border-radius: 15px;
 }
 
@@ -12,23 +12,49 @@ article h3 {
   font-size: 28px;
   color: white;
   padding: 10px;
-  margin: 0px 0px 0px 60px;
+  margin: 0px 0px 0px 25px;
 }
 
 article p {
   font-size: 20px;
-  color: black;
+  color: darkgrey;
   padding: 10px;
-  margin: 0px 0px 0px 60px;
+  margin: 0px 0px 0px 35px;
 }
 
 section {
   background: rgba(100, 255, 100, 0.5);
-  max-width: 800px;
-  padding-left: 10px;
-  margin: 0px 0px 0px 180px;
+  color: black;
+  font-size: 18px;
+  padding: 20px;
   border-radius: 10px;
+  width: 250px;
+  height: 700px;
+  line-height: 18px;
+  overflow: hidden;
+  position: fixed;
+  top: 250px;
+  right: 0px;
+  z-index: 999;
+  display: block;
+  float: right;
+  -webkit-transition: height 0.3s;
+  -moz-transition: height 0.3s;
+  -ms-transition: height 0.3s;
+  -o-transition: height 0.3s;
+  transition: height 0.3s;
 }
+
+  form fieldset {
+    border: none;
+  }
+
+  button {
+    margin-top: 10px;
+    width: 100px;
+    background-color: lightgreen;
+    border-color: lightgreen;
+  }
 
 hr {
   border-color: darkgrey;
@@ -44,3 +70,6 @@ body {
   background: url("mars.jpg");
 }
 
+p#spacer {
+  margin-top: 150px;
+}
