@@ -67,14 +67,14 @@ background: rgba(0, 0, 0, 0.4);}
     padding: 10px; }
     #info-bar a:hover {
       background-color: #0793e2; }
-  #info-bar span.all-tutorials,
-  #info-bar span.back-to-tutorial {
+  #info-bar span.toGit,
+  #info-bar span.toCodepen {
     display: block;
     width: 50%; }
-  #info-bar span.all-tutorials {
+  #info-bar span.toGit {
     float: left;
     text-align: left; }
-  #info-bar span.back-to-tutorial {
+  #info-bar span.toCodepen {
     float: right;
     text-align: right; }
 
@@ -226,14 +226,14 @@ header.smaller nav a {
 
   #info-bar a {
     display: block; }
-  #info-bar span.all-tutorials,
-  #info-bar span.back-to-tutorial {
+  #info-bar span.toGit,
+  #info-bar span.toCodepen {
     width: 100%; }
-  #info-bar span.all-tutorials,
-  #info-bar span.back-to-tutorial {
+  #info-bar span.toGit,
+  #info-bar span.toCodepen {
     float: none;
     text-align: center; }
-  #info-bar span.all-tutorials {
+  #info-bar span.toGit {
     border-bottom: solid 1px #0793e2; } }
   
 
