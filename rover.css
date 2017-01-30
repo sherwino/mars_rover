@@ -26,14 +26,14 @@ section {
   background: rgba(100, 255, 100, 0.5);
   color: black;
   font-size: 18px;
-  padding: 20px;
+  padding: 10px;
   border-radius: 10px;
   width: 250px;
-  height: 700px;
+  height: 580px;
   line-height: 18px;
   overflow: hidden;
   position: fixed;
-  top: 250px;
+  top: 200px;
   right: 0px;
   z-index: 999;
   display: block;
@@ -51,7 +51,7 @@ section {
 
   button {
     margin-top: 10px;
-    width: 100px;
+    width: 110px;
     background-color: lightgreen;
     border-color: lightgreen;
   }
