@@ -129,3 +129,25 @@ function move(rover, dir) {
 }
 
 // Below you have the functions that you need embed the javascript into the HTML File
+
+  var left = "l";
+  var right = "r";
+  var front = "f";
+  var back = "b";
+
+
+function dirPad (roverdirection) {
+
+  if (roverdirection === left) {
+    move(kata, "l");
+  }
+  else if (roverdirection === right) {
+    move(kata, "r");
+  }
+  else if (roverdirection === front) {
+    move(kata, "f");
+  }
+  else if (roverdirection === back) {
+    move(kata, "b");
+  };
+}

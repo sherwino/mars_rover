@@ -49,9 +49,16 @@ section {
     border: none;
   }
 
-  button {
+  form button {
     margin-top: 10px;
     width: 110px;
+    background-color: lightgreen;
+    border-color: lightgreen;
+  }
+
+  table button {
+    margin-top: 5px;
+    width: 45px;
     background-color: lightgreen;
     border-color: lightgreen;
   }

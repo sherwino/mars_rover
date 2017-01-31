@@ -132,17 +132,17 @@
   	</tr>
   	<tr>
     	<td></td>
-    	<td>Up</td>
+		<td><button type="button" onclick="dirPad(front)">Up</button></td>
     	<td></td>
   	</tr>
 	<tr>
-		<td><a href="javascript:move(kata)">Left</a></td>
+		<td><button type="button" onclick="dirPad(left)">Left</button></td>
 		<td>+</td>
-		<td>Right</td>
+		<td><button type="button" onclick="dirPad(right)">Right</button></td>
 	</tr>
   	<tr>
     	<td></td>
-    	<td>Down</td>
+    	<td><button type="button" onclick="dirPad(back)">Down</button></td>
     	<td></td>
   	</tr>
 </table>
@@ -153,10 +153,8 @@
     	<th>MOVEMENT</th>
 	</tr>
 	<tr>
-    	<td><a href="javascript:goForward(kata)">Forward</a></td>
-	</tr>
-	<tr>
-		<td><a href="javascript:goForward(kata)">Forward</a></td>
+    	<td><button type="button" onclick="goForward(kata)">Forw</button></td>
+		<td><button type="button" onclick="goForward(kata)">Back</button></td>
 	</tr>
 </table>
 </section>
