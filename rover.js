@@ -28,6 +28,8 @@ function submitCommand() {
 //For the obstacles, create a variable/ array with coordinates of the obstacles
 // Then create a for loop, that cheks for obstacles. 
 // Do something like if (myRover.position === obstacles[obstacle idx]) {
+// Maybe make the rover move off of the obstacle after it finds it
+//You can't compare two arrays with equal signs so don't forget to get the idx value of what you are trying to compare.
 
 
 
