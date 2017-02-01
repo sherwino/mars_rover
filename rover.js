@@ -25,7 +25,9 @@ function submitCommand() {
 }
 }
 
-
+//For the obstacles, create a variable/ array with coordinates of the obstacles
+// Then create a for loop, that cheks for obstacles. 
+// Do something like if (myRover.position === obstacles[obstacle idx]) {
 
 
 
@@ -46,7 +48,7 @@ function goForward(rover) {
       rover.position[1]--
       break;
   };
-  function tenten(rover) {
+  function tenten(rover) { //NEED TO CREATE A SEPERATE FUNCTION FOR THE RANDOM OBSTACLES
     if (rover.position[0] === 10) {
       console.log("You are on the EDGE!");
     }
