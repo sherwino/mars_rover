@@ -31,7 +31,11 @@ function submitCommand() {
 // Maybe make the rover move off of the obstacle after it finds it
 //You can't compare two arrays with equal signs so don't forget to get the idx value of what you are trying to compare.
 
+var obstacles = [];
 
+for (var i = 0; i < 4; i++){
+  // push array of two random numbers to obstacles
+}
 
 
 function goForward(rover) {
